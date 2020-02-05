@@ -7,21 +7,45 @@
   <title>Document</title>
 </head>
 <body>
+  <div>🚕🚗</div>
+
   <script>
-    var twoSum = function(nums, target) {
-      let map = new Map();
-      for (let i = 0; i < nums.length; i++) {
-        let dif = target-nums[i]
-        if (map.has(dif)) {
-          return [map.get(dif), i]
-        }
-        map.set(nums[i], i);
+    var isValid = function(s) {
+      const leftBracketStack = []
+      const rightBracketStack = []
+      const leftBracket = {
+        '(': ')',
+        '[': ']',
+        '{': '}',
       }
+      const rightBracket = {
+        ')': '(',
+        ']': '[',
+        '}': '{',
+      }
+
+      for (let i = 0, len = s.length; i < len; i++) {
+        // 筛选出括号
+        if (leftBracket[s[i]] !== undefined) {
+          leftBracketStack.push(s[i])
+        }
+        if (rightBracket[s[i]] !== undefined) {
+          rightBracketStack.push(s[i])
+          if (rightBracket[s[i]] !== leftBracketStack.pop()) {
+            return false
+          } else {
+            rightBracketStack.pop()
+          }
+        }
+      }
+
+      return !leftBracketStack.length && !rightBracketStack.length
     };
 
-    const nums = [2, 7, 11, 15];
-    const target = 9;
-    console.log(twoSum(nums, target))
+    let s = "{[]}"
+    let s1 = "(){}[]"
+    let s2 = "(]"
+    console.log(isValid(s2))
   
   </script>
 </body>
