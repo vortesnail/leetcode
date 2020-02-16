@@ -10,43 +10,45 @@
   <div>🚕🚗</div>
 
   <script>
-    var isValid = function(s) {
-      const leftBracketStack = []
-      const rightBracketStack = []
-      const leftBracket = {
-        '(': ')',
-        '[': ']',
-        '{': '}',
+    var isSymmetric = function(root) {
+      if (!root) {
+        return true
       }
-      const rightBracket = {
-        ')': '(',
-        ']': '[',
-        '}': '{',
-      }
-
-      for (let i = 0, len = s.length; i < len; i++) {
-        // 筛选出括号
-        if (leftBracket[s[i]] !== undefined) {
-          leftBracketStack.push(s[i])
+      let node = null
+      const queue = [root]
+      while (queue.length) {
+        if (!isQueueSymmetric(queue)) {
+          return false
         }
-        if (rightBracket[s[i]] !== undefined) {
-          rightBracketStack.push(s[i])
-          if (rightBracket[s[i]] !== leftBracketStack.pop()) {
-            return false
-          } else {
-            rightBracketStack.pop()
+        let len = queue.length
+        for (let i = 0; i < len; i++) {
+          node = queue.shift()
+          if (node !== null) {
+            queue.push(node.left)
+            queue.push(node.right)
           }
         }
       }
+      return true
+    }
 
-      return !leftBracketStack.length && !rightBracketStack.length
-    };
-
-    let s = "{[]}"
-    let s1 = "(){}[]"
-    let s2 = "(]"
-    console.log(isValid(s2))
-  
+    function isQueueSymmetric(arr) {
+      let left = 0, right = arr.length - 1
+      while (left < right) {
+        if (arr[left] === null || arr[right] === null) {
+          if (arr[left] !== arr[right]) {
+            return false
+          }
+        } else {
+          if (arr[left].val !== arr[right].val) {
+            return false
+          }
+        }
+        left++
+        right--
+      }
+      return true
+    }
   </script>
 </body>
 </html>
