@@ -10,45 +10,17 @@
   <div>🚕🚗</div>
 
   <script>
-    var isSymmetric = function(root) {
-      if (!root) {
-        return true
+    var singleNumber = function(nums) {
+      let res = 0
+      for (let i = 0, len = nums.length; i < len; i++) {
+        res ^= nums[i]
       }
-      let node = null
-      const queue = [root]
-      while (queue.length) {
-        if (!isQueueSymmetric(queue)) {
-          return false
-        }
-        let len = queue.length
-        for (let i = 0; i < len; i++) {
-          node = queue.shift()
-          if (node !== null) {
-            queue.push(node.left)
-            queue.push(node.right)
-          }
-        }
-      }
-      return true
-    }
+      return res
+    };
+    
 
-    function isQueueSymmetric(arr) {
-      let left = 0, right = arr.length - 1
-      while (left < right) {
-        if (arr[left] === null || arr[right] === null) {
-          if (arr[left] !== arr[right]) {
-            return false
-          }
-        } else {
-          if (arr[left].val !== arr[right].val) {
-            return false
-          }
-        }
-        left++
-        right--
-      }
-      return true
-    }
+    const arr = [1,1,2,2,3,4,4]
+    console.log(singleNumber(arr))
   </script>
 </body>
 </html>
