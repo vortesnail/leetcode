@@ -8,37 +8,25 @@
 </head>
 <body>
   <div>🚕🚗</div>
-
   <script>
-/**
- * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
- * }
- */
-/**
- * @param {ListNode} l1
- * @param {ListNode} l2
- * @return {ListNode}
- */
-  var mergeTwoLists = function(l1, l2) {
-    const prevHead = new ListNode(-1)
-    let prevNode = prevHead
-    while (l1 !== null && l2 !== null) {
-      if (l1.val <= l2.val) {
-        prevNode.next = l1
-        l1 = l1.next
+// 输入: [-2,1,-3,4,-1,2,1,-5,4],
+// 输出: 6
+// 解释: 连续子数组 [4,-1,2,1] 的和最大，为 6。
+  var maxSubArray = function(nums) {
+    let ans = nums[0]
+    let sum = 0
+    for (let i = 0, len = nums.length; i < len; i++) {
+      if (sum + nums[i]> nums[i]) {
+        sum += nums[i]
       } else {
-        prevNode.next = l2
-        l2 = l2.next
+        sum = nums[i]
       }
-      prevNode = prevNode.next
+      ans = Math.max(sum, ans)
     }
-    prevNode.next = l1 === null ? l2 : l1
-
-    return prevHead.next
+    return ans
   };
+
+  console.log(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
   </script>
 </body>
 </html>
