@@ -9,29 +9,20 @@
 <body>
   <div>🚕🚗</div>
   <script>
-var maxDepth = function(root) {
-  const tmpStack = [
-    { "key": root, "val": 1 }
-  ];
-  let depth = 0
-  while(tmpStack.length != 0){
-    const currObj = tmpStack.pop()
-    const currNode = currObj.key
-    if(currNode != null){
-      const currNode_depth = currObj.val
-      depth = Math.max(depth,currNode_depth)
-      if(currNode.left != null){
-        tmpStack.push({ "key": currNode.left, "val": currNode_depth + 1 })
-      }
-      if(currNode.right != null){
-        tmpStack.push({ "key": currNode.right, "val": currNode_depth + 1 })
-      }
+var maxProfit = function(prices) {
+  let minPrice = Infinity
+  let maxProfit = 0
+  for (let i = 0, len = prices.length; i < len; i++) {
+    if (prices[i] < minPrice) {
+      minPrice = prices[i]
+    } else if (prices[i] - minPrice > maxProfit) {
+      maxProfit = prices[i] - minPrice
     }
   }
-  return depth
+  return maxProfit
 };
 
-  console.log(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
+  console.log(maxProfit([7,1,5,3,6,4]))
   </script>
 </body>
 </html>
