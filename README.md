@@ -13,5 +13,6 @@
 | 0104 | [二叉树的最大深度](./solutions/0104.二叉树的最大深度.md) | 🚙简单 | [二叉树](https://blog.csdn.net/yummy_go/article/details/78257682)、[官方题解](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/solution/er-cha-shu-de-zui-da-shen-du-by-leetcode/) | 暂无 |
 | 0121 | [买卖股票的最佳时机](./solutions/0121.买卖股票的最佳时机.md) | 🚙简单 | 无 | 暂无 |
 | 0136 | [只出现一次的数字](./solutions/0136.只出现一次的数字.md) | 🚙简单 | [Map MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map)  | 暂无 |
+| 0141 | [环形链表](./solutions/0141.环形链表.md) | 🚙简单 | [链表操作](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/LinkList.md)  | 暂无 |
 | 0581 | [最短无序连续子数组](./solutions/0581.最短无序连续子数组.md) | 🚙简单 | 无 | 暂无 |
 
