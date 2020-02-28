@@ -9,20 +9,60 @@
 <body>
   <div>🚕🚗</div>
   <script>
-var maxProfit = function(prices) {
-  let minPrice = Infinity
-  let maxProfit = 0
-  for (let i = 0, len = prices.length; i < len; i++) {
-    if (prices[i] < minPrice) {
-      minPrice = prices[i]
-    } else if (prices[i] - minPrice > maxProfit) {
-      maxProfit = prices[i] - minPrice
-    }
-  }
-  return maxProfit
+/**
+ * initialize your data structure here.
+ */
+ var MinStack = function() {
+
 };
 
-  console.log(maxProfit([7,1,5,3,6,4]))
+/** 
+ * @param {number} x
+ * @return {void}
+ */
+MinStack.prototype.push = function(x) {
+
+};
+
+/**
+ * @return {void}
+ */
+MinStack.prototype.pop = function() {
+
+};
+
+/**
+ * @return {number}
+ */
+MinStack.prototype.top = function() {
+
+};
+
+/**
+ * @return {number}
+ */
+MinStack.prototype.getMin = function() {
+
+};
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * var obj = new MinStack()
+ * obj.push(x)
+ * obj.pop()
+ * var param_3 = obj.top()
+ * var param_4 = obj.getMin()
+ */
+
+// MinStack minStack = new MinStack();
+// minStack.push(-2);
+// minStack.push(0);
+// minStack.push(-3);
+// minStack.getMin();   --> 返回 -3.
+// minStack.pop();
+// minStack.top();      --> 返回 0.
+// minStack.getMin();   --> 返回 -2.
+
   </script>
 </body>
 </html>
