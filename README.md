@@ -14,5 +14,6 @@
 | 0121 | [买卖股票的最佳时机](./solutions/0121.买卖股票的最佳时机.md) | 🚙简单 | 无 | 暂无 |
 | 0136 | [只出现一次的数字](./solutions/0136.只出现一次的数字.md) | 🚙简单 | [Map MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map)  | 暂无 |
 | 0141 | [环形链表](./solutions/0141.环形链表.md) | 🚙简单 | [链表操作](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/LinkList.md)  | 暂无 |
+| 0155 | [最小栈](./solutions/0155.最小栈.md) | 🚙简单 | [栈]](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/Stack.md)  | 暂无 |
 | 0581 | [最短无序连续子数组](./solutions/0581.最短无序连续子数组.md) | 🚙简单 | 无 | 暂无 |
 
