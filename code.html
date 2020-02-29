@@ -9,39 +9,14 @@
 <body>
   <div>🚕🚗</div>
   <script>
-var MinStack = function() {
-    this.stack = []
-    this.min = []
-}
-
-MinStack.prototype.push = function(x) {
-    this.stack.push(x)
-    const min = this.getMin()
-    if (min === undefined || min >= x) {
-        this.min.push(x)
+var getIntersectionNode = function(headA, headB) {
+    let pA = headA
+    let pB = headB
+    while (pA !== pB) {
+        pB = pB ? pB.next : headA
+        pA = pA ? pA.next : headB
     }
-}
-
-MinStack.prototype.pop = function() {
-    const exit = this.stack.pop()
-    if (exit === this.getMin()) {
-        this.min.pop()
-    }
-    return exit
-}
-
-MinStack.prototype.top = function() {
-    if (this.stack.length === 0) {
-        return
-    }
-    return this.stack[this.stack.length - 1]
-}
-
-MinStack.prototype.getMin = function() {
-    if (this.min.length === 0) {
-        return
-    }
-    return this.min[this.min.length - 1]
+    return pA
 }
 
   </script>
