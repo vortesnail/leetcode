@@ -9,15 +9,24 @@
 <body>
   <div>🚕🚗</div>
   <script>
-var getIntersectionNode = function(headA, headB) {
-    let pA = headA
-    let pB = headB
-    while (pA !== pB) {
-        pB = pB ? pB.next : headA
-        pA = pA ? pA.next : headB
+var majorityElement = function(nums) {
+  let candicate = nums[0]
+  let count = 1
+  for (let i = 1, len = nums.length; i < len; i++) {
+    if (nums[i] !== candicate) {
+      count--
+      if (count === 0) {
+        candicate = nums[i]
+        count = 1
+      }
+    } else {
+      count++
     }
-    return pA
+  }
+  return candicate
 }
+
+console.log(majorityElement([2,2,1,1,1,2,2]))
 
   </script>
 </body>
