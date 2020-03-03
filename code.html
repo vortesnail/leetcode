@@ -9,21 +9,19 @@
 <body>
   <div>🚕🚗</div>
   <script>
-var majorityElement = function(nums) {
-  let candicate = nums[0]
-  let count = 1
-  for (let i = 1, len = nums.length; i < len; i++) {
-    if (nums[i] !== candicate) {
-      count--
-      if (count === 0) {
-        candicate = nums[i]
-        count = 1
-      }
-    } else {
-      count++
-    }
-  }
-  return candicate
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */
+var reverseList = function(head) {
+  if (head === null || head.next === null) return head
+  let curNode = reverseList(head.next)
+  head.next.next = head
+  head.next = null
+  return curNode
 }
 
 console.log(majorityElement([2,2,1,1,1,2,2]))
