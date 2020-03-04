@@ -10,21 +10,31 @@
   <div>🚕🚗</div>
   <script>
 /**
- * Definition for singly-linked list.
- * function ListNode(val) {
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
  *     this.val = val;
- *     this.next = null;
+ *     this.left = this.right = null;
  * }
  */
-var reverseList = function(head) {
-  if (head === null || head.next === null) return head
-  let curNode = reverseList(head.next)
-  head.next.next = head
-  head.next = null
-  return curNode
+/**
+ * @param {TreeNode} root
+ * @return {TreeNode}
+ */
+var invertTree = function(root) {
+  let queue = [root]
+  while (queue.length > 0) {
+    let curNode = queue.pop()
+    if (curNode === null) {
+      continue
+    } 
+    [curNode.left, curNode.right] = [curNode.right, curNode.left]
+    queue.unshift(curNode.left)
+    queue.unshift(curNode.right)
+  }
+  return root
 }
 
-console.log(majorityElement([2,2,1,1,1,2,2]))
+console.log(invertTree([2,2,1,1,1,2,2]))
 
   </script>
 </body>
