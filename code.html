@@ -17,21 +17,27 @@
  * }
  */
 /**
- * @param {TreeNode} root
+ * @param {TreeNode} t1
+ * @param {TreeNode} t2
  * @return {TreeNode}
  */
-var invertTree = function(root) {
-  let queue = [root]
-  while (queue.length > 0) {
-    let curNode = queue.pop()
-    if (curNode === null) {
-      continue
-    } 
-    [curNode.left, curNode.right] = [curNode.right, curNode.left]
-    queue.unshift(curNode.left)
-    queue.unshift(curNode.right)
+var mergeTrees = function(t1, t2) {
+  return helper(t1, t2)
+}
+
+var helper = function(t1, t2) {
+  if (t1 === null && t2 === null) {
+    return null
+  } else if (t1 === null) {
+    return t2
+  } else if (t2 === null) {
+    return t1
+  } else {
+    t1.val += t2.val
+    t1.left = helper(t1.left, t2.left)
+    t1.right = helper(t1.right, t2.right)
+    return t1
   }
-  return root
 }
 
 console.log(invertTree([2,2,1,1,1,2,2]))
