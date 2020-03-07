@@ -17,6 +17,7 @@
 | 0155 | [最小栈](./solutions/0155.最小栈.md) | 🚙简单 | [栈](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/Stack.md)  | 暂无 |
 | 0160 | [相交链表](./solutions/0160.相交链表.md) | 🚙简单 | [链表操作](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/LinkList.md)、[形象图](https://pic.leetcode-cn.com/e86e947c8b87ac723b9c858cd3834f9a93bcc6c5e884e41117ab803d205ef662-%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8.png)  | 暂无 |
 | 0169 | [多数元素](./solutions/0169.多数元素.md) | 🚙简单 | [Map MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map) | 暂无 |
+| 0198 | [打家劫舍](./solutions/0198.打家劫舍.md) | 🚙简单 | [动态规划](https://www.zhihu.com/question/39948290) | 暂无 |
 | 0206 | [反转链表](./solutions/0206.反转链表.md) | 🚙简单 | [链表操作](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/LinkList.md)、[动图理解](https://pic.leetcode-cn.com/dacd1bf55dec5c8b38d0904f26e472e2024fc8bee4ea46e3aa676f340ba1eb9d-%E9%80%92%E5%BD%92.gif) | 暂无 |
 | 0226 | [翻转二叉树](./solutions/0226.翻转二叉树.md) | 🚙简单 | [二叉树](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/BinaryTree.md) | 暂无 |
 | 0581 | [最短无序连续子数组](./solutions/0581.最短无序连续子数组.md) | 🚙简单 | 无 | 暂无 |

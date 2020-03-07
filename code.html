@@ -9,20 +9,21 @@
 <body>
   <div>🚕🚗</div>
   <script>
-
-var hammingDistance = function(x, y) {
-  let dis = 0
-  while (x || y) {
-    if (x % 2 !== y % 2) {
-      dis += 1
+var rob = function(nums) {
+  let sumOdd = 0
+  let sumEven = 0
+  nums.map((num, index) => {
+    if (index % 2 === 0) {
+      sumEven += num
+      sumEven = Math.max(sumOdd, sumEven)
+    } else {
+      sumOdd += num
+      sumOdd = Math.max(sumOdd, sumEven)
     }
-    x = Math.floor(x / 2)
-    y = Math.floor(y / 2)
-  }
-  return dis
+  })
+  return Math.max(sumOdd, sumEven)
 }
-
-console.log(hammingDistance(1,4))
+console.log(rob([2,7,9,3,1]))
 
   </script>
 </body>
