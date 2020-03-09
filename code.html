@@ -9,21 +9,42 @@
 <body>
   <div>🚕🚗</div>
   <script>
-var rob = function(nums) {
-  let sumOdd = 0
-  let sumEven = 0
-  nums.map((num, index) => {
-    if (index % 2 === 0) {
-      sumEven += num
-      sumEven = Math.max(sumOdd, sumEven)
-    } else {
-      sumOdd += num
-      sumOdd = Math.max(sumOdd, sumEven)
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {boolean}
+ */
+var isPalindrome = function(head) {
+  let slow = head, fast = head
+  let p = null, pre = null
+  while (fast && fast.next) {
+    p = slow
+    slow = slow.next
+    fast = fast.next.next
+
+    p.next = pre
+    pre = p
+  }
+  // 奇数个节点时跳过中间节点
+  if (fast) {
+    slow = slow.next
+  }
+
+  while (p) {
+    if (p.val !== slow.val) {
+      return false
     }
-  })
-  return Math.max(sumOdd, sumEven)
-}
-console.log(rob([2,7,9,3,1]))
+    p = p.next
+    slow = slow.next
+  }
+  return true
+};
 
   </script>
 </body>
