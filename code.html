@@ -9,42 +9,21 @@
 <body>
   <div>🚕🚗</div>
   <script>
-/**
- * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
- * }
- */
-/**
- * @param {ListNode} head
- * @return {boolean}
- */
-var isPalindrome = function(head) {
-  let slow = head, fast = head
-  let p = null, pre = null
-  while (fast && fast.next) {
-    p = slow
-    slow = slow.next
-    fast = fast.next.next
+var moveZeroes = function(nums) {
+  for (let curZero = 0, willNonZero = 0; willNonZero < nums.length; willNonZero++) {
+    if (nums[willNonZero] !== 0) {
+      const temp = nums[willNonZero]
+      nums[willNonZero] = nums[curZero]
+      nums[curZero] = temp
 
-    p.next = pre
-    pre = p
-  }
-  // 奇数个节点时跳过中间节点
-  if (fast) {
-    slow = slow.next
-  }
-
-  while (p) {
-    if (p.val !== slow.val) {
-      return false
+      curZero++
     }
-    p = p.next
-    slow = slow.next
   }
-  return true
+
+  return nums
 };
+
+console.log(moveZeroes([1,2,0,3,0,10]))
 
   </script>
 </body>
