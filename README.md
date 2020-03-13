@@ -22,5 +22,6 @@
 | 0226 | [翻转二叉树](./solutions/0226.翻转二叉树.md) | 🚙简单 | [二叉树](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/BinaryTree.md) | 暂无 |
 | 0234 | [回文链表](./solutions/0234.回文链表.md) | 🚙简单 | [链表操作](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/LinkList.md) | 暂无 |
 | 0283 | [移动零](./solutions/0283.移动零.md) | 🚙简单 | [动图演示](https://pic.leetcode-cn.com/36d1ac5d689101cbf9947465e94753c626eab7fcb736ae2175f5d87ebc85fdf0-283_2.gif) | 暂无 |
+| 0448 | [找到所有数组中消失的数字](./solutions/0448.找到所有数组中消失的数字.md) | 🚙简单 | 暂无 | 暂无 |
 | 0581 | [最短无序连续子数组](./solutions/0581.最短无序连续子数组.md) | 🚙简单 | 无 | 暂无 |
 | 0617 | [合并二叉树](./solutions/0617.合并二叉树.md) | 🚙简单 | [二叉树](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/BinaryTree.md) | 暂无 |

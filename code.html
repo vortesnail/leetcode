@@ -9,21 +9,21 @@
 <body>
   <div>🚕🚗</div>
   <script>
-var moveZeroes = function(nums) {
-  for (let curZero = 0, willNonZero = 0; willNonZero < nums.length; willNonZero++) {
-    if (nums[willNonZero] !== 0) {
-      const temp = nums[willNonZero]
-      nums[willNonZero] = nums[curZero]
-      nums[curZero] = temp
-
-      curZero++
+var findDisappearedNumbers = function(nums) {
+  const arr = []
+  const len = nums.length
+  for (let i = 0; i < len; i++) {
+    nums[Math.abs(nums[i]) - 1] = -Math.abs(nums[Math.abs(nums[i]) - 1])
+  }
+  for (let i = 0; i < len; i++) {
+    if (nums[i] > 0) {
+      arr.push(i + 1)
     }
   }
-
-  return nums
+  return arr
 };
 
-console.log(moveZeroes([1,2,0,3,0,10]))
+console.log(findDisappearedNumbers([4,3,2,7,8,2,3,1]))
 
   </script>
 </body>
