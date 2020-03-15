@@ -9,20 +9,33 @@
 <body>
   <div>🚕🚗</div>
   <script>
-var findDisappearedNumbers = function(nums) {
-  const arr = []
-  const len = nums.length
-  for (let i = 0; i < len; i++) {
-    nums[Math.abs(nums[i]) - 1] = -Math.abs(nums[Math.abs(nums[i]) - 1])
-  }
-  for (let i = 0; i < len; i++) {
-    if (nums[i] > 0) {
-      arr.push(i + 1)
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {TreeNode}
+ */
+var convertBST = function(root) {
+  function convert(node) {
+    if (node === null) {
+      return 0
     }
+    convert(node.right)
+    acc += node.val
+    node.val = acc
+    convert(node.left)
   }
-  return arr
-};
 
+  let acc = 0
+  convert(root)
+
+  return root
+}
 console.log(findDisappearedNumbers([4,3,2,7,8,2,3,1]))
 
   </script>
