@@ -20,38 +20,22 @@
  * @param {TreeNode} root
  * @return {TreeNode}
  */
+var diameterOfBinaryTree = function(root) {
+  let res = 0
+  dfs(root)
 
-// 巧用前缀和与缓存实现线性复杂度
-var pathSum = function(root, sum) {
-  // 预置一个历史前缀和为 0 的缓存，兼容从 root 出发的路径解
-  let res = 0, cache = {0: 1}
-
-  function dfs(node, prefixPathSum=0) {
-    // 到达空节点，直接回退
-    if (node == null) return
-    // 更新当前节点的前缀和
-    prefixPathSum += node.val
-    // 若最新计算出的历史前缀和存在于缓存中，则遇到了一个新的路径解
-    let oldPrefixPathSum = prefixPathSum - sum
-    if (oldPrefixPathSum in cache) res += cache[oldPrefixPathSum]
-    // 将当前前缀和计入缓存
-    cache[prefixPathSum] = (cache[prefixPathSum] || 0) + 1
-    // 继续向下遍历当前节点的所有子路径
-    dfs(node.left, prefixPathSum)
-    dfs(node.right, prefixPathSum)
-    // 当前节点的所有子路径遍历完毕，回退到父节点之前需要将当前节点的前缀和移出缓存
-    cache[prefixPathSum] -= 1
+  function dfs(root) {
+    if (root === null) {
+      return 0
+    }
+    const leftDepth = dfs(root.left)
+    const rigthDepth = dfs(root.right)
+    res = Math.max(res, leftDepth + rigthDepth)
+    return Math.max(leftDepth, rigthDepth) + 1
   }
 
-  dfs(root)
   return res
 };
-
-作者：xxleyi
-链接：https://leetcode-cn.com/problems/path-sum-iii/solution/wo-shi-ban-yun-gong-by-xxleyi/
-来源：力扣（LeetCode）
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-console.log(findDisappearedNumbers([4,3,2,7,8,2,3,1]))
 
   </script>
 </body>
