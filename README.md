@@ -5,6 +5,7 @@
 | 题号 | 问题 | 难度 | 解题参考 | 视频解说 |
 | --- | --- | --- | --- | --- |
 | 0001 | [两数之和](./solutions/0001.两数之和.md) | 🚙简单 | [Map MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map) | 暂无 |
+| 0002 | [两数相加](./solutions/0002.两数相加.md) | 🚗中等 | [链表操作](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/LinkList.md) | 暂无 |
 | 0020 | [有效的括号](./solutions/0020.有效的括号.md) | 🚙简单 | [栈](https://juejin.im/post/5b2323896fb9a00e8f795e5b) | 暂无 |
 | 0021 | [合并两个有序链表](./solutions/0021.合并两个有序链表.md) | 🚙简单 | [官方解析](https://leetcode-cn.com/problems/merge-two-sorted-lists/solution/he-bing-liang-ge-you-xu-lian-biao-by-leetcode/) | 暂无 |
 | 0053 | [最大子序和](./solutions/0053.最大子序和.md) | 🚙简单 | [动态规划](https://www.zhihu.com/question/39948290) | 暂无 |
