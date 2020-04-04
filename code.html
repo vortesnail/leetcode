@@ -10,21 +10,30 @@
   <div>🚕🚗</div>
   <script>
 
-var lengthOfLongestSubstring = function(s) {
-  const len = s.length
-  let max = 0
-  const map = new Map()
-  for (let start = 0, end = 0; end < len; end++) {
-    if (map.has(s[end])) {
-      start = Math.max(map.get(s[end]), start)
+var maxArea = function(height) {
+  let result = 0
+  const len = height.length
+  let leftIndex = 0
+  let rightIndex = len - 1
+  while (leftIndex !== rightIndex) {
+    let nLength;
+    let mLength = rightIndex - leftIndex
+    if (height[leftIndex] < height[rightIndex]) {
+      nLength = height[leftIndex]
+      leftIndex++
+    } else {
+      nLength = height[rightIndex]
+      rightIndex--
     }
-    max = Math.max(max, end - start + 1)
-    map.set(s[end], end + 1)
+    const areaSize = mLength * nLength
+    if (areaSize > result) {
+      result = areaSize
+    }
   }
-  return max
+  return result
 }
 
-console.log(lengthOfLongestSubstring("aab"))
+console.log(maxArea("aab"))
 
   </script>
 </body>
