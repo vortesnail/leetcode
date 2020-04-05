@@ -10,30 +10,27 @@
   <div>🚕🚗</div>
   <script>
 
-var maxArea = function(height) {
-  let result = 0
-  const len = height.length
-  let leftIndex = 0
-  let rightIndex = len - 1
-  while (leftIndex !== rightIndex) {
-    let nLength;
-    let mLength = rightIndex - leftIndex
-    if (height[leftIndex] < height[rightIndex]) {
-      nLength = height[leftIndex]
-      leftIndex++
-    } else {
-      nLength = height[rightIndex]
-      rightIndex--
-    }
-    const areaSize = mLength * nLength
-    if (areaSize > result) {
-      result = areaSize
+var countSubstrings = function(s) {
+  const len = s.length
+  const dp = new Array(len)
+  let ans = 0
+      
+  for (let i = 0; i < len; i++) {
+    dp[i] = new Array(len).fill( false );
+  }
+
+  for (let i = 0; i < s.length; i++) {
+    for (let j = 0; j <= i; j++) {
+      if (s[i] == s[j] && (i - j < 2 || dp[j + 1][i - 1])) {
+        dp[j][i] = true
+        ans++
+      }
     }
   }
-  return result
+  return ans
 }
 
-console.log(maxArea("aab"))
+console.log(countSubstrings("aaa"))
 
   </script>
 </body>
