@@ -9,28 +9,27 @@
 <body>
   <div>🚕🚗</div>
   <script>
-
-var countSubstrings = function(s) {
-  const len = s.length
-  const dp = new Array(len)
-  let ans = 0
-      
+var dailyTemperatures = function(T) {
+  const len = T.length
+  const ans = new Array(len)
+  const st = new Array()
   for (let i = 0; i < len; i++) {
-    dp[i] = new Array(len).fill( false );
+    ans[i] = 0
   }
 
-  for (let i = 0; i < s.length; i++) {
-    for (let j = 0; j <= i; j++) {
-      if (s[i] == s[j] && (i - j < 2 || dp[j + 1][i - 1])) {
-        dp[j][i] = true
-        ans++
-      }
+  for (let i = 0; i < len; i++) {
+    while (st.length !== 0 && T[i] > T[st[st.length - 1]]) {
+      const t = st[st.length - 1]
+      st.pop()
+      ans[t] = i - t
     }
+    st.push(i)
   }
+
   return ans
 }
 
-console.log(countSubstrings("aaa"))
+console.log(dailyTemperatures([73, 74, 75, 71, 69, 72, 76, 73]))
 
   </script>
 </body>

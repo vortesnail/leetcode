@@ -31,4 +31,5 @@
 | 0543 | [二叉树的直径](./solutions/0543.二叉树的直径.md) | 🚙简单 | [二叉搜索树](https://lufficc.com/blog/binary-search-tree)、[二叉树遍历方式](https://segmentfault.com/a/1190000004620352) | 暂无 |
 | 0581 | [最短无序连续子数组](./solutions/0581.最短无序连续子数组.md) | 🚙简单 | 无 | 暂无 |
 | 0617 | [合并二叉树](./solutions/0617.合并二叉树.md) | 🚙简单 | [二叉树](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/BinaryTree.md) | 暂无 |
-| 0647 | [回文子串](./solutions/0647.回文子串.md) | 🚙简单 | 暂无 | [回文子串dp讲解](https://www.youtube.com/watch?v=ZnzvU03HtYk) |
+| 0647 | [回文子串](./solutions/0647.回文子串.md) | 🚗中等 | 暂无 | [回文子串dp讲解](https://www.youtube.com/watch?v=ZnzvU03HtYk) |
+| 0739 | [每日温度](./solutions/0739.每日温度.md) | 🚗中等 | [图解](https://leetcode-cn.com/problems/daily-temperatures/solution/leetcode-tu-jie-739mei-ri-wen-du-by-misterbooo/) | 暂无 |
