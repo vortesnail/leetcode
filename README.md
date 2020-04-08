@@ -8,6 +8,7 @@
 | 0002 | [两数相加](./solutions/0002.两数相加.md) | 🚗中等 | [链表操作](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/LinkList.md) | 暂无 |
 | 0003 | [无重复字符的最长子串](./solutions/0003.无重复字符的最长子串.md) | 🚗中等 | [滑动窗口](https://blog.csdn.net/chinanfsk/article/details/95045048) | 暂无 |
 | 0011 | [盛最多水的容器](./solutions/0011.盛最多水的容器.md) | 🚗中等 | 暂无 | 暂无 |
+| 0012 | [整数转罗马数字](./solutions/0012.整数转罗马数字.md) | 🚗中等 | 暂无 | 暂无 |
 | 0020 | [有效的括号](./solutions/0020.有效的括号.md) | 🚙简单 | [栈](https://juejin.im/post/5b2323896fb9a00e8f795e5b) | 暂无 |
 | 0021 | [合并两个有序链表](./solutions/0021.合并两个有序链表.md) | 🚙简单 | [官方解析](https://leetcode-cn.com/problems/merge-two-sorted-lists/solution/he-bing-liang-ge-you-xu-lian-biao-by-leetcode/) | 暂无 |
 | 0053 | [最大子序和](./solutions/0053.最大子序和.md) | 🚙简单 | [动态规划](https://www.zhihu.com/question/39948290) | 暂无 |
