@@ -5,10 +5,10 @@
 | 题号 | 问题 | 难度 | 解题参考 | 视频解说 |
 | --- | --- | --- | --- | --- |
 | 0001 | [两数之和](./solutions/0001.两数之和.md) | 🚙简单 | [Map MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map) | 暂无 |
-| 0002 | [两数相加](./solutions/0002.两数相加.md) | 🚗中等 | [链表操作](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/LinkList.md) | 暂无 |
-| 0003 | [无重复字符的最长子串](./solutions/0003.无重复字符的最长子串.md) | 🚗中等 | [滑动窗口](https://blog.csdn.net/chinanfsk/article/details/95045048) | 暂无 |
-| 0011 | [盛最多水的容器](./solutions/0011.盛最多水的容器.md) | 🚗中等 | 暂无 | 暂无 |
-| 0012 | [整数转罗马数字](./solutions/0012.整数转罗马数字.md) | 🚗中等 | 暂无 | 暂无 |
+| 0002 | [两数相加](./solutions/0002.两数相加.md) | 🚕中等 | [链表操作](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/LinkList.md) | 暂无 |
+| 0003 | [无重复字符的最长子串](./solutions/0003.无重复字符的最长子串.md) | 🚕中等 | [滑动窗口](https://blog.csdn.net/chinanfsk/article/details/95045048) | 暂无 |
+| 0011 | [盛最多水的容器](./solutions/0011.盛最多水的容器.md) | 🚕中等 | 暂无 | 暂无 |
+| 0012 | [整数转罗马数字](./solutions/0012.整数转罗马数字.md) | 🚕中等 | 暂无 | 暂无 |
 | 0020 | [有效的括号](./solutions/0020.有效的括号.md) | 🚙简单 | [栈](https://juejin.im/post/5b2323896fb9a00e8f795e5b) | 暂无 |
 | 0021 | [合并两个有序链表](./solutions/0021.合并两个有序链表.md) | 🚙简单 | [官方解析](https://leetcode-cn.com/problems/merge-two-sorted-lists/solution/he-bing-liang-ge-you-xu-lian-biao-by-leetcode/) | 暂无 |
 | 0053 | [最大子序和](./solutions/0053.最大子序和.md) | 🚙简单 | [动态规划](https://www.zhihu.com/question/39948290) | 暂无 |
@@ -26,12 +26,12 @@
 | 0226 | [翻转二叉树](./solutions/0226.翻转二叉树.md) | 🚙简单 | [二叉树](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/BinaryTree.md) | 暂无 |
 | 0234 | [回文链表](./solutions/0234.回文链表.md) | 🚙简单 | [链表操作](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/LinkList.md) | 暂无 |
 | 0283 | [移动零](./solutions/0283.移动零.md) | 🚙简单 | [动图演示](https://pic.leetcode-cn.com/36d1ac5d689101cbf9947465e94753c626eab7fcb736ae2175f5d87ebc85fdf0-283_2.gif) | 暂无 |
-| 0338 | [比特位计数](./solutions/0338.比特位计数.md) | 🚙简单 | [精选题解](https://leetcode-cn.com/problems/counting-bits/solution/hen-qing-xi-de-si-lu-by-duadua/) | 暂无 |
+| 0338 | [比特位计数](./solutions/0338.比特位计数.md) | 🚕简单 | [精选题解](https://leetcode-cn.com/problems/counting-bits/solution/hen-qing-xi-de-si-lu-by-duadua/) | 暂无 |
 | 0437 | [路径总和III](./solutions/0437.路径总和III.md) | 🚙简单 | 暂无 | 暂无 |
 | 0448 | [找到所有数组中消失的数字](./solutions/0448.找到所有数组中消失的数字.md) | 🚙简单 | 暂无 | 暂无 |
 | 0538 | [把二叉搜索树转换为累加树](./solutions/0538.把二叉搜索树转换为累加树.md) | 🚙简单 | [二叉搜索树](https://lufficc.com/blog/binary-search-tree)、[二叉树遍历方式](https://segmentfault.com/a/1190000004620352) | 暂无 |
 | 0543 | [二叉树的直径](./solutions/0543.二叉树的直径.md) | 🚙简单 | [二叉搜索树](https://lufficc.com/blog/binary-search-tree)、[二叉树遍历方式](https://segmentfault.com/a/1190000004620352) | 暂无 |
 | 0581 | [最短无序连续子数组](./solutions/0581.最短无序连续子数组.md) | 🚙简单 | 无 | 暂无 |
 | 0617 | [合并二叉树](./solutions/0617.合并二叉树.md) | 🚙简单 | [二叉树](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/BinaryTree.md) | 暂无 |
-| 0647 | [回文子串](./solutions/0647.回文子串.md) | 🚗中等 | 暂无 | [回文子串dp讲解](https://www.youtube.com/watch?v=ZnzvU03HtYk) |
-| 0739 | [每日温度](./solutions/0739.每日温度.md) | 🚗中等 | [图解](https://leetcode-cn.com/problems/daily-temperatures/solution/leetcode-tu-jie-739mei-ri-wen-du-by-misterbooo/) | 暂无 |
+| 0647 | [回文子串](./solutions/0647.回文子串.md) | 🚕中等 | 暂无 | [回文子串dp讲解](https://www.youtube.com/watch?v=ZnzvU03HtYk) |
+| 0739 | [每日温度](./solutions/0739.每日温度.md) | 🚕中等 | [图解](https://leetcode-cn.com/problems/daily-temperatures/solution/leetcode-tu-jie-739mei-ri-wen-du-by-misterbooo/) | 暂无 |
