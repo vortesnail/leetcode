@@ -9,19 +9,20 @@
 <body>
   <div>🚕🚗</div>
   <script>
-var intToRoman = function (num) {
-    let keys = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
-    let values = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
-    let res = ''
-    for (let i = 0; i < keys.length; i++) {
-        while (num >= keys[i]) {
-            num -= keys[i]
-            res += values[i]
-        }
+var countBits = function(num) {
+  const resArr = []
+  resArr[0] = 0
+  for (let i = 1; i <= num; i++) {
+    if (i % 2 === 1) {
+      resArr[i] = resArr[i-1] + 1
+    } else {
+      resArr[i] = resArr[i/2]
     }
-    return res
-}
-console.log(intToRoman(1994))
+  }
+
+  return resArr
+};
+console.log(countBits(5))
 
   </script>
 </body>
