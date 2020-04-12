@@ -9,33 +9,33 @@
 <body>
   <div>🚕🚗</div>
   <script>
-var letterCombinations = function(digits) {
-  if(!digits) return []
-  let len = digits.length
-  let map = new Map()
-  map.set('2','abc')
-  map.set('3','def')
-  map.set('4','ghi')
-  map.set('5','jkl')
-  map.set('6','mno')
-  map.set('7','pqrs')
-  map.set('8','tuv')
-  map.set('9','wxyz')
-  let ans = []
-  function combinations(i, str) {
-    if(i === len) {
-      ans.push(str)
-      return
-    } 
-    let temp = map.get(digits[i])
-    for(let k = 0; k < temp.length; k++) {
-      combinations(i + 1, str + temp[k])
+var longestPalindrome = function(s) {
+  if(!s || s.length < 2) return s
+  let start = 0 
+  let end = 0
+  for(let i = 0; i < s.length; i++) {
+    let len1 = expandCenter(s, i, i)
+    let len2 = expandCenter(s, i, i+1)
+    // 两种组合取最大回文串的长度
+    let len = Math.max(len1, len2)
+    if(len > end - start) {
+      // 更新最大回文串的首尾字符索引
+      start = i - Math.floor((len - 1) / 2)
+      end = i + Math.floor(len / 2)
     }
   }
-  combinations(0, '')
-  return ans
+  return s.substring(start, end + 1)
 }
-console.log(letterCombinations('23'))
+
+const expandCenter = function(s,l,r) {
+  while(l>=0 && r < s.length && s[l] === s[r]) {
+    l--
+    r++
+  }
+  return r - l -1
+}
+
+console.log(longestPalindrome('abcac'))
 
   </script>
 </body>

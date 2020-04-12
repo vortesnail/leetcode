@@ -7,6 +7,7 @@
 | 0001 | [两数之和](./solutions/0001.两数之和.md) | 🚙简单 | [Map MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map) | 暂无 |
 | 0002 | [两数相加](./solutions/0002.两数相加.md) | 🚕中等 | [链表操作](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/LinkList.md) | 暂无 |
 | 0003 | [无重复字符的最长子串](./solutions/0003.无重复字符的最长子串.md) | 🚕中等 | [滑动窗口](https://blog.csdn.net/chinanfsk/article/details/95045048) | 暂无 |
+| 0005 | [最长回文子串](./solutions/0005.最长回文子串.md) | 🚕中等 | 暂无 | 暂无 |
 | 0011 | [盛最多水的容器](./solutions/0011.盛最多水的容器.md) | 🚕中等 | 暂无 | 暂无 |
 | 0012 | [整数转罗马数字](./solutions/0012.整数转罗马数字.md) | 🚕中等 | 暂无 | 暂无 |
 | 0017 | [电话号码的字母组合](./solutions/0017.电话号码的字母组合.md) | 🚕中等 | [回溯到底是什么](https://www.cnblogs.com/yinbiao/p/9221573.html) | 暂无 |
