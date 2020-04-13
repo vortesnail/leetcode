@@ -9,33 +9,23 @@
 <body>
   <div>🚕🚗</div>
   <script>
-var longestPalindrome = function(s) {
-  if(!s || s.length < 2) return s
-  let start = 0 
-  let end = 0
-  for(let i = 0; i < s.length; i++) {
-    let len1 = expandCenter(s, i, i)
-    let len2 = expandCenter(s, i, i+1)
-    // 两种组合取最大回文串的长度
-    let len = Math.max(len1, len2)
-    if(len > end - start) {
-      // 更新最大回文串的首尾字符索引
-      start = i - Math.floor((len - 1) / 2)
-      end = i + Math.floor(len / 2)
-    }
+var removeNthFromEnd = function(head, n) {
+  const fakerNode = new ListNode(0)
+  fakerNode.next = head
+  let left = right = fakerNode
+  while (n !== 0) {
+    right = right.next
+    n--
   }
-  return s.substring(start, end + 1)
+  while (right.next !== null) {
+    right = right.next
+    left = left.next
+  }
+  left.next = left.next.next
+  return fakerNode.next
 }
 
-const expandCenter = function(s,l,r) {
-  while(l>=0 && r < s.length && s[l] === s[r]) {
-    l--
-    r++
-  }
-  return r - l -1
-}
-
-console.log(longestPalindrome('abcac'))
+console.log(generateParenthesis('abcac'))
 
   </script>
 </body>
