@@ -1,40 +1,16 @@
-# leetcode 刷题之路
+# leetcode 分类专题刷刷刷
 
-### 🔥热题 HOT 100
+这个仓库原来是我私人的刷题库，本来是有解答和一些学习链接的，后来断了一段时间，现在重新捡起。
 
-| 题号 | 问题 | 难度 | 解题参考 | 视频解说 |
-| --- | --- | --- | --- | --- |
-| 0001 | [两数之和](./solutions/0001.两数之和.md) | 🚙简单 | [Map MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map) | 暂无 |
-| 0002 | [两数相加](./solutions/0002.两数相加.md) | 🚕中等 | [链表操作](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/LinkList.md) | 暂无 |
-| 0003 | [无重复字符的最长子串](./solutions/0003.无重复字符的最长子串.md) | 🚕中等 | [滑动窗口](https://blog.csdn.net/chinanfsk/article/details/95045048) | 暂无 |
-| 0005 | [最长回文子串](./solutions/0005.最长回文子串.md) | 🚕中等 | 暂无 | 暂无 |
-| 0011 | [盛最多水的容器](./solutions/0011.盛最多水的容器.md) | 🚕中等 | 暂无 | 暂无 |
-| 0012 | [整数转罗马数字](./solutions/0012.整数转罗马数字.md) | 🚕中等 | 暂无 | 暂无 |
-| 0017 | [电话号码的字母组合](./solutions/0017.电话号码的字母组合.md) | 🚕中等 | [回溯到底是什么](https://www.cnblogs.com/yinbiao/p/9221573.html) | 暂无 |
-| 0019 | [删除链表的倒数第N个节点](./solutions/0019.删除链表的倒数第N个节点.md) | 🚕中等 | 暂无 | 暂无 |
-| 0020 | [有效的括号](./solutions/0020.有效的括号.md) | 🚙简单 | [栈](https://juejin.im/post/5b2323896fb9a00e8f795e5b) | 暂无 |
-| 0021 | [合并两个有序链表](./solutions/0021.合并两个有序链表.md) | 🚙简单 | [官方解析](https://leetcode-cn.com/problems/merge-two-sorted-lists/solution/he-bing-liang-ge-you-xu-lian-biao-by-leetcode/) | 暂无 |
-| 0053 | [最大子序和](./solutions/0053.最大子序和.md) | 🚙简单 | [动态规划](https://www.zhihu.com/question/39948290) | 暂无 |
-| 0070 | [爬楼梯](./solutions/0070.爬楼梯.md) | 🚙简单 | [动态规划](https://www.zhihu.com/question/39948290)、[斐波那契数列](https://www.mathsisfun.com/numbers/fibonacci-sequence.html) | 暂无 |
-| 0101 | [对称二叉树](./solutions/0101.对称二叉树.md) | 🚙简单 | [二叉树](https://blog.csdn.net/yummy_go/article/details/78257682) | 暂无 |
-| 0104 | [二叉树的最大深度](./solutions/0104.二叉树的最大深度.md) | 🚙简单 | [二叉树](https://blog.csdn.net/yummy_go/article/details/78257682)、[官方题解](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/solution/er-cha-shu-de-zui-da-shen-du-by-leetcode/) | 暂无 |
-| 0121 | [买卖股票的最佳时机](./solutions/0121.买卖股票的最佳时机.md) | 🚙简单 | 无 | 暂无 |
-| 0136 | [只出现一次的数字](./solutions/0136.只出现一次的数字.md) | 🚙简单 | [Map MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map)  | 暂无 |
-| 0141 | [环形链表](./solutions/0141.环形链表.md) | 🚙简单 | [链表操作](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/LinkList.md)  | 暂无 |
-| 0155 | [最小栈](./solutions/0155.最小栈.md) | 🚙简单 | [栈](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/Stack.md)  | 暂无 |
-| 0160 | [相交链表](./solutions/0160.相交链表.md) | 🚙简单 | [链表操作](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/LinkList.md)、[形象图](https://pic.leetcode-cn.com/e86e947c8b87ac723b9c858cd3834f9a93bcc6c5e884e41117ab803d205ef662-%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8.png)  | 暂无 |
-| 0169 | [多数元素](./solutions/0169.多数元素.md) | 🚙简单 | [Map MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map) | 暂无 |
-| 0198 | [打家劫舍](./solutions/0198.打家劫舍.md) | 🚙简单 | [动态规划](https://www.zhihu.com/question/39948290) | 暂无 |
-| 0206 | [反转链表](./solutions/0206.反转链表.md) | 🚙简单 | [链表操作](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/LinkList.md)、[动图理解](https://pic.leetcode-cn.com/dacd1bf55dec5c8b38d0904f26e472e2024fc8bee4ea46e3aa676f340ba1eb9d-%E9%80%92%E5%BD%92.gif) | 暂无 |
-| 0226 | [翻转二叉树](./solutions/0226.翻转二叉树.md) | 🚙简单 | [二叉树](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/BinaryTree.md) | 暂无 |
-| 0234 | [回文链表](./solutions/0234.回文链表.md) | 🚙简单 | [链表操作](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/LinkList.md) | 暂无 |
-| 0283 | [移动零](./solutions/0283.移动零.md) | 🚙简单 | [动图演示](https://pic.leetcode-cn.com/36d1ac5d689101cbf9947465e94753c626eab7fcb736ae2175f5d87ebc85fdf0-283_2.gif) | 暂无 |
-| 0338 | [比特位计数](./solutions/0338.比特位计数.md) | 🚕简单 | [精选题解](https://leetcode-cn.com/problems/counting-bits/solution/hen-qing-xi-de-si-lu-by-duadua/) | 暂无 |
-| 0437 | [路径总和III](./solutions/0437.路径总和III.md) | 🚙简单 | 暂无 | 暂无 |
-| 0448 | [找到所有数组中消失的数字](./solutions/0448.找到所有数组中消失的数字.md) | 🚙简单 | 暂无 | 暂无 |
-| 0538 | [把二叉搜索树转换为累加树](./solutions/0538.把二叉搜索树转换为累加树.md) | 🚙简单 | [二叉搜索树](https://lufficc.com/blog/binary-search-tree)、[二叉树遍历方式](https://segmentfault.com/a/1190000004620352) | 暂无 |
-| 0543 | [二叉树的直径](./solutions/0543.二叉树的直径.md) | 🚙简单 | [二叉搜索树](https://lufficc.com/blog/binary-search-tree)、[二叉树遍历方式](https://segmentfault.com/a/1190000004620352) | 暂无 |
-| 0581 | [最短无序连续子数组](./solutions/0581.最短无序连续子数组.md) | 🚙简单 | 无 | 暂无 |
-| 0617 | [合并二叉树](./solutions/0617.合并二叉树.md) | 🚙简单 | [二叉树](https://github.com/Reaper622/DataStructure-Algorithm-TS/blob/master/docs/ds/BinaryTree.md) | 暂无 |
-| 0647 | [回文子串](./solutions/0647.回文子串.md) | 🚕中等 | 暂无 | [回文子串dp讲解](https://www.youtube.com/watch?v=ZnzvU03HtYk) |
-| 0739 | [每日温度](./solutions/0739.每日温度.md) | 🚕中等 | [图解](https://leetcode-cn.com/problems/daily-temperatures/solution/leetcode-tu-jie-739mei-ri-wen-du-by-misterbooo/) | 暂无 |
+现在根据 [ssh](https://github.com/sl1673495) 大佬的 [leetcode-javascript](https://github.com/sl1673495/leetcode-javascript) 仓库把每个分类下的每个推荐题都刷一下，加强一下自己的算法基础。但是这个仓库有点不好就是，按照 README 的分类顺序去刷是对新手有难度的，所以我会在下面给出正确的刷题顺序，大家只要按着这个顺序走就可以。
+
+另外，我会把每个分类在 leetcode 建好对应的公共可访问的收藏夹，大家点击每个下面每个标题旁边的 ⭐️ 就可以打开收藏夹地址。
+
+## 二分查找 [⭐️](https://leetcode-cn.com/problem-list/eX9fB8Ea)
+
+- [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
+- [69. x 的平方根](https://leetcode-cn.com/problems/sqrtx/)
+- [704. 二分查找](https://leetcode-cn.com/problems/binary-search/)
+
+
+
