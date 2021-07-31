@@ -12,5 +12,7 @@
 - [69. x 的平方根](https://leetcode-cn.com/problems/sqrtx/)
 - [704. 二分查找](https://leetcode-cn.com/problems/binary-search/)
 
+## 查找表 [⭐️](https://leetcode-cn.com/problem-list/KYFPLOXw)
 
-
+- [389. 找不同](https://leetcode-cn.com/problems/find-the-difference/)
+- [350. 两个数组的交集 II](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/)
