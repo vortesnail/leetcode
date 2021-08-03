@@ -9,23 +9,33 @@
 <body>
   <div>🚕🚗</div>
   <script>
-var removeNthFromEnd = function(head, n) {
-  const fakerNode = new ListNode(0)
-  fakerNode.next = head
-  let left = right = fakerNode
-  while (n !== 0) {
-    right = right.next
-    n--
-  }
-  while (right.next !== null) {
-    right = right.next
-    left = left.next
-  }
-  left.next = left.next.next
-  return fakerNode.next
-}
+    class Node {
+      constructor(value) {
+        this.value = value;
+        this.next = null;
+      }
+    }
 
-console.log(generateParenthesis('abcac'))
+    class LinkedList {
+      constructor() {
+        this.head = null;
+        this.tail = this.head;
+        this.length = 0;
+      }
+
+      append (value) {
+        const newNode = new Node(value);
+        if (!this.head) {
+          this.head = newNode;
+          this.tail = newNode;
+        } else {
+          this.tail.next = newNode;
+          this.tail = newNode;
+        }
+        this.length++;
+      }
+    }
+
 
   </script>
 </body>
