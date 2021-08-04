@@ -33,3 +33,7 @@
 - [19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
 - [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 - [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
+
+## LRU 缓存机制 [⭐️](https://leetcode-cn.com/problem-list/97TDHRRC)
+
+- [146. LRU 缓存机制](https://leetcode-cn.com/problems/lru-cache/)
