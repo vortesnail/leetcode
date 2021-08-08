@@ -37,3 +37,16 @@
 ## LRU 缓存机制 [⭐️](https://leetcode-cn.com/problem-list/97TDHRRC)
 
 - [146. LRU 缓存机制](https://leetcode-cn.com/problems/lru-cache/)
+
+## 前缀和 [⭐️](https://leetcode-cn.com/problem-list/kNTVZps1)
+
+- [560. 和为 K 的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)
+
+## 二叉树 [⭐️](https://leetcode-cn.com/problem-list/nSzezqrS)
+
+- [236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+- [108. 将有序数组转换为二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/)
+- [450. 删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/)
+- [112. 路径总和](https://leetcode-cn.com/problems/path-sum/)
+- [113. 路径总和 II](https://leetcode-cn.com/problems/path-sum-ii/)
+- [437. 路径总和 III](https://leetcode-cn.com/problems/path-sum-iii/)
