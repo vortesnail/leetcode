@@ -57,3 +57,7 @@
 - [101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)
 - [111. 二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)
 - [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
+- [199. 二叉树的右视图](https://leetcode-cn.com/problems/binary-tree-right-side-view/)
+- [144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
+- [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
+- [100. 相同的树](https://leetcode-cn.com/problems/same-tree/)
