@@ -61,3 +61,36 @@
 - [144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
 - [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
 - [100. 相同的树](https://leetcode-cn.com/problems/same-tree/)
+
+## DFS [⭐️](https://leetcode-cn.com/problem-list/nSzezqrS)
+
+DFS 的内容和 二叉树 没什么区别，有心的同学可以再刷一遍？
+
+- [236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+- [108. 将有序数组转换为二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/)
+- [450. 删除二叉搜索树中的节点](https://leetcode-cn.com/problems/delete-node-in-a-bst/)
+- [112. 路径总和](https://leetcode-cn.com/problems/path-sum/)
+- [113. 路径总和 II](https://leetcode-cn.com/problems/path-sum-ii/)
+- [437. 路径总和 III](https://leetcode-cn.com/problems/path-sum-iii/)
+- [129. 求根节点到叶节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/)
+- [257. 二叉树的所有路径](https://leetcode-cn.com/problems/binary-tree-paths/)
+- [404. 左叶子之和](https://leetcode-cn.com/problems/sum-of-left-leaves/)
+- [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
+- [101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)
+- [111. 二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)
+- [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
+- [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
+- [100. 相同的树](https://leetcode-cn.com/problems/same-tree/)
+
+## BFS [⭐️](https://leetcode-cn.com/problem-list/cdsPeEX5)
+
+以下两题和 BFS 没关系，但是可以先预热一下：
+
+- [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)
+- [45. 跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)
+- [1306. 跳跃游戏 III](https://leetcode-cn.com/problems/jump-game-iii/)
+- [111. 二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/)
+- [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
+- [199. 二叉树的右视图](https://leetcode-cn.com/problems/binary-tree-right-side-view/)
+- [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
+- [100. 相同的树](https://leetcode-cn.com/problems/same-tree/)
