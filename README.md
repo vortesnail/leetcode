@@ -14,6 +14,7 @@
 
 ## 查找表 [⭐️](https://leetcode-cn.com/problem-list/KYFPLOXw)
 
+- [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)
 - [389. 找不同](https://leetcode-cn.com/problems/find-the-difference/)
 - [350. 两个数组的交集 II](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/)
 
@@ -94,3 +95,15 @@ DFS 的内容和 二叉树 没什么区别，有心的同学可以再刷一遍�
 - [199. 二叉树的右视图](https://leetcode-cn.com/problems/binary-tree-right-side-view/)
 - [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
 - [100. 相同的树](https://leetcode-cn.com/problems/same-tree/)
+
+## 双指针 [⭐️](https://leetcode-cn.com/problem-list/ccZMKZDK)
+
+- [16. 最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest/)
+- [524. 通过删除字母匹配到字典里最长单词](https://leetcode-cn.com/problems/longest-word-in-dictionary-through-deleting/)
+- [240. 搜索二维矩阵 II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii/)
+- [392. 判断子序列](https://leetcode-cn.com/problems/is-subsequence/)
+- [455. 分发饼干](https://leetcode-cn.com/problems/assign-cookies/)
+- [125. 验证回文串](https://leetcode-cn.com/problems/valid-palindrome/)
+- [167. 两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)
+- [88. 合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)
+- [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)
