@@ -112,8 +112,16 @@ DFS 的内容和 二叉树 没什么区别，有心的同学可以再刷一遍�
 
 - [面试题 16.11. 跳水板](https://leetcode-cn.com/problems/diving-board-lcci/)
 - [1291. 顺次数](https://leetcode-cn.com/problems/sequential-digits/)
-- [46. 全排列](https://leetcode-cn.com/problems/permutations/)
-- [47. 全排列 II](https://leetcode-cn.com/problems/permutations-ii/)
 - [54. 螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/)
 - [59. 螺旋矩阵 II](https://leetcode-cn.com/problems/spiral-matrix-ii/)
 - [73. 矩阵置零](https://leetcode-cn.com/problems/set-matrix-zeroes/)
+- [980. 不同路径 III](https://leetcode-cn.com/problems/unique-paths-iii/)
+- [784. 字母大小写全排列](https://leetcode-cn.com/problems/letter-case-permutation/)
+
+### 子集、组合
+- [78. 子集](https://leetcode-cn.com/problems/subsets/)
+- [90. 子集 II](https://leetcode-cn.com/problems/subsets-ii/)
+
+### 全排列
+- [46. 全排列](https://leetcode-cn.com/problems/permutations/)
+- [47. 全排列 II](https://leetcode-cn.com/problems/permutations-ii/)
