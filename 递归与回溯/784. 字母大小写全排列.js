@@ -25,3 +25,34 @@ var letterCasePermutation = function (s) {
 };
 
 // 回溯写法
+var letterCasePermutation = function (s) {
+  const res = [];
+  const sArr = s.split('');
+
+  var backtracking = function (path, start) {
+    if (path.length === sArr.length) {
+      res.push([...path].join(''));
+    }
+    for (let i = start; i < sArr.length; i++) {
+      if (/[0-9]/.test(sArr[i])) {
+        path.push(sArr[i]);
+        backtracking(path, i + 1);
+        path.pop();
+      } else {
+        const a = sArr[i].toLowerCase();
+        path.push(a);
+        backtracking(path, i + 1);
+        path.pop();
+
+        const A = sArr[i].toUpperCase();
+        path.push(A);
+        backtracking(path, i + 1);
+        path.pop();
+      }
+
+    }
+  }
+
+  backtracking([], 0);
+  return res;
+};

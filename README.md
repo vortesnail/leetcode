@@ -116,12 +116,21 @@ DFS 的内容和 二叉树 没什么区别，有心的同学可以再刷一遍�
 - [59. 螺旋矩阵 II](https://leetcode-cn.com/problems/spiral-matrix-ii/)
 - [73. 矩阵置零](https://leetcode-cn.com/problems/set-matrix-zeroes/)
 - [980. 不同路径 III](https://leetcode-cn.com/problems/unique-paths-iii/)
-- [784. 字母大小写全排列](https://leetcode-cn.com/problems/letter-case-permutation/)
 
 ### 子集、组合
+
 - [78. 子集](https://leetcode-cn.com/problems/subsets/)
 - [90. 子集 II](https://leetcode-cn.com/problems/subsets-ii/)
+- [77. 组合](https://leetcode-cn.com/problems/combinations/)
+- [39. 组合总和](https://leetcode-cn.com/problems/combination-sum/)
+- [40. 组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/)
+- [216. 组合总和 III](https://leetcode-cn.com/problems/combination-sum-iii/)
+- [784. 字母大小写全排列](https://leetcode-cn.com/problems/letter-case-permutation/)
 
 ### 全排列
+
 - [46. 全排列](https://leetcode-cn.com/problems/permutations/)
 - [47. 全排列 II](https://leetcode-cn.com/problems/permutations-ii/)
+- [剑指 Offer 38. 字符串的排列](https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/)
+
+### 搜索
