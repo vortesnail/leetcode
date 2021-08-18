@@ -134,3 +134,13 @@ DFS 的内容和 二叉树 没什么区别，有心的同学可以再刷一遍�
 - [剑指 Offer 38. 字符串的排列](https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/)
 
 ### 搜索
+
+- [401. 二进制手表](https://leetcode-cn.com/problems/binary-watch/)
+- [79. 单词搜索](https://leetcode-cn.com/problems/word-search/)
+- [200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/solution/)
+- [695. 岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)
+
+### 分割
+
+- [131. 分割回文串](https://leetcode-cn.com/problems/palindrome-partitioning/)
+- [93. 复原 IP 地址](https://leetcode-cn.com/problems/restore-ip-addresses/)
