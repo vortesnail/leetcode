@@ -144,3 +144,13 @@ DFS 的内容和 二叉树 没什么区别，有心的同学可以再刷一遍�
 
 - [131. 分割回文串](https://leetcode-cn.com/problems/palindrome-partitioning/)
 - [93. 复原 IP 地址](https://leetcode-cn.com/problems/restore-ip-addresses/)
+
+## 动态规划 [⭐️](https://leetcode-cn.com/problem-list/l17RJFnN)
+
+- [509. 斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)
+- [300. 最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
+- [718. 最长重复子数组](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/)
+
+## 排序 [⭐️](https://leetcode-cn.com/problem-list/W7hjhmNb)
+
+- [912. 排序数组](https://leetcode-cn.com/problems/sort-an-array/)
