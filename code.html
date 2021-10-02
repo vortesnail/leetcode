@@ -6,48 +6,116 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <style>
-      .father {
-        position: relative;
-        width: 200px;
+      #container {
+        width: 100%;
         height: 200px;
-        border: 1px solid red;
+        line-height: 200px;
+        text-align: center;
+        color: #fff;
+        background-color: #444;
+        font-size: 30px;
       }
-      .son {
-        height: 100px;
+      .box {
+        position: absolute;
+        left: 0;
+        top: 0;
         width: 100px;
-        margin: 10px;
-        background: lightcoral;
+        height: 100px;
+        border: 1px solid;
+      }
+      .box1 {
+        border: 1px solid red;
+        /* transform: translate(50px, 50px) rotate(45deg); */
+        transform: translate(50px, 50px);
+        /* transform: rotate(45deg); */
+      }
+      .box2 {
+        border: 1px solid blue;
+        transform: rotate(45deg) translate(50px);
       }
     </style>
   </head>
   <body>
-    <div>🚕🚗</div>
-    <div class="father">
-      <div class="son"></div>
-      <div class="son"></div>
-    </div>
-
+    <div id="container"></div>
+    <div class="box1 box"></div>
+    <div class="box2 box"></div>
     <script>
-      var sortArray = function (nums) {
-        for (let i = 0; i < nums.length; i++) {
-          let minIdx = i;
-          for (let j = i; j < nums.length; j++) {
-            if (nums[j] < nums[minIdx]) {
-              minIdx = j;
-            }
+      function f(matrix) {
+        const res = [];
+        const len = matrix.length;
+
+        function dfs(path, curIndex) {
+          if (path.length === len) {
+            res.push(path.slice().join(""));
+            return;
           }
-          if (minIdx !== i) {
-            const temp = nums[i];
-            nums[i] = nums[minIdx];
-            nums[minIdx] = temp;
+
+          for (let i = 0; i < matrix[curIndex].length; i++) {
+            path.push(matrix[curIndex][i]);
+            dfs(path, curIndex + 1);
+            path.pop();
           }
-          console.log(nums)
         }
 
-        return nums;
+        dfs([], 0);
+        return res;
+      }
+
+      console.log(
+        f([
+          ["a", "b"],
+          ["n", "m"],
+          ["0", "1"],
+        ])
+      );
+
+      // JS 实现一个带并发限制的异度调度器 Scheduler，保证同时运行的任务最多有两个。完善下面代码中的 Scheduler 类，使得以下程序能正确输出。
+      class Scheduler {
+        constructor() {
+          this.waitTasks = []; // 待执行的任务队列
+          this.excutingTasks = []; // 正在执行的任务队列
+          this.maxExcutingNum = 2; // 允许同时运行的任务数量
+        }
+
+        add(promiseMaker) {
+          if (this.excutingTasks.length < this.maxExcutingNum) {
+            this.run(promiseMaker);
+          } else {
+            this.waitTasks.push(promiseMaker);
+          }
+        }
+
+        run(promiseMaker) {
+          const len = this.excutingTasks.push(promiseMaker);
+          const index = len - 1;
+          promiseMaker().then(() => {
+            this.excutingTasks.splice(index, 1);
+            if (this.waitTasks.length > 0) {
+              this.run(this.waitTasks.shift());
+            }
+          });
+        }
+      }
+
+      const timeout = (time) =>
+        new Promise((resolve) => {
+          setTimeout(resolve, time);
+        });
+
+      const scheduler = new Scheduler();
+      const addTask = (time, order) => {
+        scheduler.add(() => timeout(time).then(() => console.log(order)));
       };
 
-      console.log(sortArray([5, 1, 1, 2, 0, 0]));
+      addTask(1000, "1");
+      addTask(500, "2");
+      addTask(300, "3");
+      addTask(400, "4");
+      // output：2 3 1 4
+      // 一开始，1，2两个任务进入队列。
+      // 500ms 时，2完成，输出2，任务3入队。
+      // 800ms 时，3完成，输出3，任务4入队。
+      // 1000ms 时，1完成，输出1。
     </script>
   </body>
 </html>

@@ -31,9 +31,11 @@
 - [203. 移除链表元素](https://leetcode-cn.com/problems/remove-linked-list-elements/)
 - [2. 两数相加](https://leetcode-cn.com/problems/add-two-numbers/)
 - [24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
+- [剑指 Offer 22. 链表中倒数第 k 个节点](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
 - [19. 删除链表的倒数第 N 个结点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
 - [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 - [92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
+- [141. 环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
 
 ## LRU 缓存机制 [⭐️](https://leetcode-cn.com/problem-list/97TDHRRC)
 
@@ -150,7 +152,13 @@ DFS 的内容和 二叉树 没什么区别，有心的同学可以再刷一遍�
 - [509. 斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/)
 - [300. 最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
 - [718. 最长重复子数组](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/)
+- [53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)
+
+## 栈 [⭐️](https://leetcode-cn.com/problem-list/zqCRhoIK)
+
+- [20. 有效的括号.js](https://leetcode-cn.com/problems/valid-parentheses/)
 
 ## 排序 [⭐️](https://leetcode-cn.com/problem-list/W7hjhmNb)
 
 - [912. 排序数组](https://leetcode-cn.com/problems/sort-an-array/)
+- [215. 数组中的第 K 个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)

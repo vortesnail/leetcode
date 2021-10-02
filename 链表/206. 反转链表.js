@@ -8,9 +8,6 @@ var reverseList = function (head) {
     cur.next = pre;
     pre = cur;
     cur = nxt;
-    if (nxt !== null) {
-      nxt = nxt.next;
-    }
   }
   return pre;
 }
